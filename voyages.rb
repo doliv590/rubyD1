@@ -5,7 +5,8 @@ voyages = [
 {ville: 'Bangkok', duree: 15}
 ]
 
-voyages.each do |ville|
-	puts "Voyage à "ville"de #{duree} jours."
-	end
-	 
+voyages.each do |voyage| 
+	if voyage[:duree]>= 5
+	puts "Voyage à #{voyage[:ville]} de #{voyage [:duree]} jours"
+end
+end
